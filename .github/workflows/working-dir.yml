@@ -1,5 +1,8 @@
 name: Working dir and shell
-on : push
+on :
+    push:
+        paths:
+            - .github/workflows/working-dir.yml
 defaults:
     run:
         shell: bash
