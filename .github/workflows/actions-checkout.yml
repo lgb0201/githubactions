@@ -1,0 +1,17 @@
+name: Test-action-checkout
+on: [push]
+
+jobs:
+  using-checkout-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: list file before
+        run: |
+          pwd
+          ls -la
+      - uses: actions/checkout@v4
+      - name: list file after
+        run: |
+          pwd
+          ls -la
+            
