@@ -1,5 +1,9 @@
 name: Working dir and shell
 on : push
+defaults:
+    run:
+        shell: bash
+        working-directory: /home/lgb
 jobs:
     display-wd-info:
         runs-on: ubuntu-latest
