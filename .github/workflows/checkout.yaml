@@ -1,4 +1,4 @@
-name: Checkout
+name: Checkout-dir
 on: push
 
 jobs:
@@ -7,9 +7,9 @@ jobs:
     steps:
       - name: list files before
         run: |
-            pwd
-            ls -l
-						echo 'hello wodl'
+          pwd
+          ls -l
+          echo 'hello wodl'
       - name: checkout
         run: |
           git init
